@@ -2,7 +2,19 @@
  * @NOTE: Prepend a `~` to css file paths that are in your node_modules
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
-body {
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Space Mono';
+    src: url('../../assets/font/SpaceMono-Regular.ttf');
+  }
+}
+
+/* body {
   position: relative;
   color: white;
   height: 100vh;
@@ -59,4 +71,4 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin: 20px 0;
-}
+} */
